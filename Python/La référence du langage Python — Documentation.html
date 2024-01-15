@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://docs.python.org/fr/3/reference/index.html -->
+<html lang="fr" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La référence du langage Python — Documentation Python 3.10.0</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./La référence du langage Python — Documentation_files/pydoctheme.css" type="text/css"><style class="darkreader darkreader--sync" media="screen"></style><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><meta name="darkreader" content="d9211b81d79a41dbbb152f87fa05e94b"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+a[href="https://coinmarketcap.com/"] > svg[width="94"][height="16"] > path {
+    fill: var(--darkreader-neutral-text) !important;
+}
+#edge-translate-panel-body {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style>
+    <link rel="stylesheet" href="./La référence du langage Python — Documentation_files/pygments.css" type="text/css"><style class="darkreader darkreader--sync" media="screen"></style>
+    
+    <script id="documentation_options" data-url_root="../" src="./La référence du langage Python — Documentation_files/documentation_options.js.téléchargement"></script>
+    <script src="./La référence du langage Python — Documentation_files/jquery.js.téléchargement"></script>
+    <script src="./La référence du langage Python — Documentation_files/underscore.js.téléchargement"></script>
+    <script src="./La référence du langage Python — Documentation_files/doctools.js.téléchargement"></script>
+    <script src="./La référence du langage Python — Documentation_files/language_data.js.téléchargement"></script>
+    <script src="./La référence du langage Python — Documentation_files/translations.js.téléchargement"></script>
+    
+    <script src="./La référence du langage Python — Documentation_files/sidebar.js.téléchargement"></script>
+    
+    <link rel="search" type="application/opensearchdescription+xml" title="Recherchez dans Documentation Python 3.10.0" href="https://docs.python.org/fr/3/_static/opensearch.xml">
+    <link rel="author" title="À propos de ces documents" href="https://docs.python.org/fr/3/about.html">
+    <link rel="index" title="Index" href="https://docs.python.org/fr/3/genindex.html">
+    <link rel="search" title="Recherche" href="https://docs.python.org/fr/3/search.html">
+    <link rel="copyright" title="Copyright" href="https://docs.python.org/fr/3/copyright.html">
+    <link rel="next" title="1. Introduction" href="https://docs.python.org/fr/3/reference/introduction.html">
+    <link rel="prev" title="6. Éditeurs et IDEs" href="https://docs.python.org/fr/3/using/editors.html">
+    <link rel="canonical" href="https://docs.python.org/3/reference/index.html">
+    
+      
+    
+
+    
+    <style>
+      @media only screen {
+        table.full-width-table {
+            width: 100%;
+        }
+      }
+    </style><style class="darkreader darkreader--sync" media="screen"></style>
+<link rel="shortcut icon" type="image/png" href="./La référence du langage Python — Documentation_files/py.svg">
+            <script type="text/javascript" src="./La référence du langage Python — Documentation_files/copybutton.js.téléchargement"></script>
+            <script type="text/javascript" src="./La référence du langage Python — Documentation_files/menu.js.téléchargement"></script> 
+
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation" aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu">
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+         <a href="https://www.python.org/" class="nav-logo">
+             <img src="./La référence du langage Python — Documentation_files/py.svg" alt="Logo">
+         </a>
+        <div class="version_switcher_placeholder"><select id="version_select"><option value="3.11">dev (3.11)</option><option value="3.10" selected="selected">3.10.0</option><option value="3.9">3.9</option><option value="3.8">3.8</option><option value="3.7">3.7</option><option value="3.6">3.6</option><option value="3.5">3.5</option><option value="2.7">2.7</option></select></div>
+        <form role="search" class="search" action="https://docs.python.org/fr/3/search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bdb7af;"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Recherche rapide">
+            <input type="submit" value="Go">
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation" tabindex="-1">
+            <div class="language_switcher_placeholder"><select id="language_select"><option value="en">English</option><option value="es">Spanish</option><option value="fr" selected="selected">French</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="pt-br">Brazilian Portuguese</option><option value="zh-cn">Simplified Chinese</option><option value="zh-tw">Traditional Chinese</option></select></div>
+  <h4>Sujet précédent</h4>
+  <p class="topless"><a href="https://docs.python.org/fr/3/using/editors.html" title="Chapitre précédent"><span class="section-number">6. </span>Éditeurs et IDEs</a></p>
+  <h4>Sujet suivant</h4>
+  <p class="topless"><a href="https://docs.python.org/fr/3/reference/introduction.html" title="Chapitre suivant"><span class="section-number">1. </span>Introduction</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Cette page</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://docs.python.org/fr/3/bugs.html">Signalement de bogue</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.10/Doc/reference/index.rst" rel="nofollow">Montrer le code source
+        </a>
+      </li>
+    </ul>
+  </div>
+        </nav>
+    </div>
+</div>
+
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://docs.python.org/fr/3/genindex.html" title="Index général" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/py-modindex.html" title="Index des modules Python">modules</a> |</li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/reference/introduction.html" title="1. Introduction" accesskey="N">suivant</a> |</li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/using/editors.html" title="6. Éditeurs et IDEs" accesskey="P">précédent</a> |</li>
+
+          <li><img src="./La référence du langage Python — Documentation_files/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"></li>
+          <li><a href="https://www.python.org/">Python</a> »</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"><select id="language_select"><option value="en">English</option><option value="es">Spanish</option><option value="fr" selected="selected">French</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="pt-br">Brazilian Portuguese</option><option value="zh-cn">Simplified Chinese</option><option value="zh-tw">Traditional Chinese</option></select></div>
+            <div class="version_switcher_placeholder"><select id="version_select"><option value="3.11">dev (3.11)</option><option value="3.10" selected="selected">3.10.0</option><option value="3.9">3.9</option><option value="3.8">3.8</option><option value="3.7">3.7</option><option value="3.6">3.6</option><option value="3.5">3.5</option><option value="2.7">2.7</option></select></div>
+          </li>
+          <li>
+              
+          </li>
+    <li id="cpython-language-and-version">
+      <a href="https://docs.python.org/fr/3/index.html">3.10.0 Documentation</a> »
+    </li>
+
+        <li class="nav-item nav-item-this"><a href="https://docs.python.org/fr/3/reference/index.html">La référence du langage Python</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="https://docs.python.org/fr/3/search.html" method="get">
+          <input placeholder="Recherche rapide" aria-label="Recherche rapide" type="text" name="q">
+          <input type="submit" value="Go">
+          <input type="hidden" name="check_keywords" value="yes">
+          <input type="hidden" name="area" value="default">
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-python-language-reference">
+<span id="reference-index"></span><h1>La référence du langage Python<a class="headerlink" href="https://docs.python.org/fr/3/reference/index.html#the-python-language-reference" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Cette documentation décrit la syntaxe et la «&nbsp;sémantique interne&nbsp;» du langage. Elle peut être laconique, mais essaye d'être exhaustive et exacte. La sémantique des objets natifs secondaires, des fonctions, et des modules est documentée dans <a class="reference internal" href="https://docs.python.org/fr/3/library/index.html#library-index"><span class="std std-ref">La bibliothèque standard</span></a>. Pour une présentation informelle du langage, voyez plutôt <a class="reference internal" href="https://docs.python.org/fr/3/tutorial/index.html#tutorial-index"><span class="std std-ref">Le tutoriel Python</span></a>. Pour les développeurs C ou C++, deux manuels supplémentaires existent&nbsp;: <a class="reference internal" href="https://docs.python.org/fr/3/extending/index.html#extending-index"><span class="std std-ref">Extension et intégration de l'interpréteur Python</span></a> survole l'écriture d'extensions, et <a class="reference internal" href="https://docs.python.org/fr/3/c-api/index.html#c-api-index"><span class="std std-ref">Manuel de référence de l'API Python/C</span></a> décrit l'interface C/C++ en détail.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/introduction.html">1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/introduction.html#alternate-implementations">1.1. Autres implémentations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/introduction.html#notation">1.2. Notations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html">2. Analyse lexicale</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#line-structure">2.1. Structure des lignes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#other-tokens">2.2. Autres lexèmes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#identifiers">2.3. Identifiants et mots-clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#literals">2.4. Littéraux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#operators">2.5. Opérateurs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/lexical_analysis.html#delimiters">2.6. Délimiteurs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/datamodel.html">3. Modèle de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/datamodel.html#objects-values-and-types">3.1. Objets, valeurs et types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/datamodel.html#the-standard-type-hierarchy">3.2. Hiérarchie des types standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/datamodel.html#special-method-names">3.3. Méthodes spéciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/datamodel.html#coroutines">3.4. Coroutines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/executionmodel.html">4. Modèle d'exécution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/executionmodel.html#structure-of-a-program">4.1. Structure d'un programme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/executionmodel.html#naming-and-binding">4.2. Noms et liaisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/executionmodel.html#exceptions">4.3. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html">5. Le système d'importation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#importlib">5.1. <code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#packages">5.2. Les paquets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#searching">5.3. Recherche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#loading">5.4. Chargement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#the-path-based-finder">5.5. Le chercheur dans <em>path</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#replacing-the-standard-import-system">5.6. Remplacement du système d'importation standard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#package-relative-imports">5.7. Importations relatives au paquet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#special-considerations-for-main">5.8. Cas particulier de <code class="docutils literal notranslate"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#open-issues">5.9. Idées d'amélioration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/import.html#references">5.10. Références</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html">6. Expressions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#arithmetic-conversions">6.1. Conversions arithmétiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#atoms">6.2. Atomes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#primaries">6.3. Primaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#await-expression">6.4. Expression <code class="docutils literal notranslate"><span class="pre">await</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#the-power-operator">6.5. L'opérateur puissance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#unary-arithmetic-and-bitwise-operations">6.6. Arithmétique unaire et opérations sur les bits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations">6.7. Opérations arithmétiques binaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#shifting-operations">6.8. Opérations de décalage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#binary-bitwise-operations">6.9. Opérations binaires bit à bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#comparisons">6.10. Comparaisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#boolean-operations">6.11. Opérations booléennes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#assignment-expressions">6.12. Expressions d'affectation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#conditional-expressions">6.13. Expressions conditionnelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#lambda">6.14. Expressions lambda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#expression-lists">6.15. Listes d'expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#evaluation-order">6.16. Ordre d'évaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/expressions.html#operator-precedence">6.17. Priorités des opérateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html">7. Les instructions simples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#expression-statements">7.1. Les expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#assignment-statements">7.2. Les assignations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-assert-statement">7.3. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-pass-statement">7.4. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">pass</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-del-statement">7.5. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-return-statement">7.6. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-yield-statement">7.7. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">yield</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-raise-statement">7.8. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-break-statement">7.9. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-continue-statement">7.10. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-import-statement">7.11. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-global-statement">7.12. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">global</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/simple_stmts.html#the-nonlocal-statement">7.13. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">nonlocal</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html">8. Instructions composées</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-if-statement">8.1. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-while-statement">8.2. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">while</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-for-statement">8.3. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-try-statement">8.4. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-with-statement">8.5. L'instruction <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#the-match-statement">8.6. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">match</span></code> statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#function-definitions">8.7. Définition de fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#class-definitions">8.8. Définition de classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/compound_stmts.html#coroutines">8.9. Coroutines</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/toplevel_components.html">9. Composants de plus haut niveau</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/toplevel_components.html#complete-python-programs">9.1. Programmes Python complets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/toplevel_components.html#file-input">9.2. Fichier d'entrée</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/toplevel_components.html#interactive-input">9.3. Entrée interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://docs.python.org/fr/3/reference/toplevel_components.html#expression-input">9.4. Entrée d'expression</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://docs.python.org/fr/3/reference/grammar.html">10. Spécification complète de la grammaire</a></li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper" style="float: left; margin-right: 0px; width: 202px; top: 0px;">
+  <h4>Sujet précédent</h4>
+  <p class="topless"><a href="https://docs.python.org/fr/3/using/editors.html" title="Chapitre précédent"><span class="section-number">6. </span>Éditeurs et IDEs</a></p>
+  <h4>Sujet suivant</h4>
+  <p class="topless"><a href="https://docs.python.org/fr/3/reference/introduction.html" title="Chapitre suivant"><span class="section-number">1. </span>Introduction</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Cette page</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://docs.python.org/fr/3/bugs.html">Signalement de bogue</a></li>
+      <li>
+        <a href="https://github.com/python/cpython/blob/3.10/Doc/reference/index.rst" rel="nofollow">Montrer le code source
+        </a>
+      </li>
+    </ul>
+  </div>
+        </div>
+      <div id="sidebarbutton" title="Réduire la barre latérale" style="border-radius: 0px 5px 5px 0px; color: rgb(68, 68, 68); background-color: rgb(204, 204, 204); font-size: 1.2em; cursor: pointer; height: 1952.19px; padding-top: 1px; padding-left: 1px; margin-left: 218px; --darkreader-inline-color:#bdb7af; --darkreader-inline-bgcolor:#35393b;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor=""><span style="display: block; position: fixed; top: 441px;">«</span></div></div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://docs.python.org/fr/3/genindex.html" title="Index général">index</a></li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/py-modindex.html" title="Index des modules Python">modules</a> |</li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/reference/introduction.html" title="1. Introduction">suivant</a> |</li>
+        <li class="right">
+          <a href="https://docs.python.org/fr/3/using/editors.html" title="6. Éditeurs et IDEs">précédent</a> |</li>
+
+          <li><img src="./La référence du langage Python — Documentation_files/py.svg" alt="python logo" style="vertical-align: middle; margin-top: -1px"></li>
+          <li><a href="https://www.python.org/">Python</a> »</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"><select id="language_select"><option value="en">English</option><option value="es">Spanish</option><option value="fr" selected="selected">French</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="pt-br">Brazilian Portuguese</option><option value="zh-cn">Simplified Chinese</option><option value="zh-tw">Traditional Chinese</option></select></div>
+            <div class="version_switcher_placeholder"><select id="version_select"><option value="3.11">dev (3.11)</option><option value="3.10" selected="selected">3.10.0</option><option value="3.9">3.9</option><option value="3.8">3.8</option><option value="3.7">3.7</option><option value="3.6">3.6</option><option value="3.5">3.5</option><option value="2.7">2.7</option></select></div>
+          </li>
+          <li>
+              
+          </li>
+    <li id="cpython-language-and-version">
+      <a href="https://docs.python.org/fr/3/index.html">3.10.0 Documentation</a> »
+    </li>
+
+        <li class="nav-item nav-item-this"><a href="https://docs.python.org/fr/3/reference/index.html">La référence du langage Python</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="https://docs.python.org/fr/3/search.html" method="get">
+          <input placeholder="Recherche rapide" aria-label="Recherche rapide" type="text" name="q">
+          <input type="submit" value="Go">
+          <input type="hidden" name="check_keywords" value="yes">
+          <input type="hidden" name="area" value="default">
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    © <a href="https://docs.python.org/fr/3/copyright.html">Copyright</a> 2001-2021, Python Software Foundation.
+    <br>
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br>
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br>
+    See <a href="https://docs.python.org/fr/3/reference/index.html">History and License</a> for more information.
+    <br><br>
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br>
+    <br>
+
+    Mis à jour le oct. 07, 2021.
+    <a href="https://docs.python.org/3/bugs.html">Found a bug</a>?
+    <br>
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+
+    <script type="text/javascript" src="./La référence du langage Python — Documentation_files/switchers.js.téléchargement"></script>
+  
+</body></html>

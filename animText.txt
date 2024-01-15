@@ -1,0 +1,11 @@
+import time
+
+def print_anim(text):
+    dots = ""
+    for _ in range(3):
+        dots += "."
+        print(text + dots, end='\r')
+        time.sleep(0.5)
+    print(text + dots)
+phrase = "Remplissage de la liste"
+print_anim(phrase)

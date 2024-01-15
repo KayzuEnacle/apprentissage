@@ -1,0 +1,20 @@
+$ : variable
+function : Créer une fonction perso
+global : Permet de prendre une variable spécifique dans le code qui n'est pas dans la boucle
+return : renvoie des options
+if : condition
+else : sinon
+elseif : sinon si
+echo : afficher des options
+while : tant que
+var_dump : résultat détaillés
+readline : = input dans python
+array_reverse : inverser un tableau
+sort : mettre en ordre croissant un tableau 
+count : compter dans un tableau 
+array_sum : somme de valeur dans un tableau 
+str_replace : remplace 
+require : importation de fichier spécifique mais si fichier non trouvé, plante
+include : importation de fichier spécifique mais si fichier non trouvé, plante et continue à executer le code
+require_once : requierd une fois
+include_once : inclure une fois
